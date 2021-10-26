@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >  
+
+
+
+<title>Home Page</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="public/Jobspotlogo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onClick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">JOB SEEKERS</a></li>
+            <li><a href="">EMPLOYERS</a></li>
+            <li><a href="">SIGN IN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+          <h1> Intern with Jobspot! </h1>
+          <p> Kick-start your career with a professional internship with our Summer Intern or
+              <br></br>Graduate Talent Program as you garner relevant skills and experience which would 
+             <br></br>make you more employable and put your at a competitive edge </p>
+             <a href="" class="hero-btn"> Register Here! </a>
+        </div>
+    </section>
+
+<!---- Products --->
+
+<section class="products">
+
+  <h1> Products </h1>
+
+  <div class="row">
+    <div class="products-col">
+      <h3> Summer Intern </h3>
+      <p> The Summer Intern program is an unpaid internship program for students in their
+        second and third year of university studies, where they work with startup 
+        companies for a period of 6 - 12 weeks, to garner more experience. </p>
+      </div>
+
+    <div class="products-col">
+      <h3> Graduate Talent </h3>
+      <p> The Graduate Talent program is a 6 weeks fellowship program for students in their final 
+        year of their university studies. They are enrolled in a training program in a bootcamp style, 
+        after which they are placed into organizations for a graduate internship 
+      </p>    
+    </div>
+
+    <div class="products-col">
+      <h3> Expert Talent </h3>
+      <p> The Expert Talent program is a job placement for candidate who are actively searching 
+        for a job to advance their career. Candidates may include people already in the workfoce
+      who have experience and expertise in their field  </p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+    <h1> Services </h1>
+    
+<div class="row">
+  
+  <div class="services-col">
+      <img src="/public/resume.png" class="resume"> 
+  </div>
+  <div class="services-col">
+  <img src="/public/interview.png" class="interview">
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+  <!-----Javascript for Toggle Menue ---->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+  navLinks.style.right = "0";
+}
+ function hideMenu(){
+   navLinks.style.right = "-200px";
+ }
+
+</script>
+
+</html>
